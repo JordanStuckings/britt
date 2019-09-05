@@ -9,12 +9,6 @@ module.exports = {
     author: 'Jordan',
   },
   plugins: [
-    {
-      resolve: `gatsby-mdx`,
-      options: {
-        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -60,7 +54,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
     {
         resolve: "gatsby-source-graphql",
         options: {
