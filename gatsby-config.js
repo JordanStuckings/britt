@@ -9,12 +9,6 @@ module.exports = {
     author: 'Jordan',
   },
   plugins: [
-    {
-      resolve: `gatsby-mdx`,
-      options: {
-        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -57,20 +51,6 @@ module.exports = {
         display: 'minimal-ui',
         icon: 'src/images/britt-sketch-square.png', // This path is relative to the root of the site.
       },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
-    {
-        resolve: "gatsby-source-graphql",
-        options: {
-            // The top level query type, can be anything you want!
-            typeName: "GCMS",
-            // The field you'll query against, can also be anything you want.
-            fieldName: "gcms",
-            // Your API endpoint, available from the dashboard and settings window.
-            url: "https://api-apeast.graphcms.com/v1/cjtkv4yoq6k6201b94et96ls8/master",
-        },
     },
     {
         resolve: "gatsby-plugin-google-tagmanager",
