@@ -16,6 +16,13 @@ import counterfeitMarketAudio from '../audio/counterfeit_market.mp3'
 import counterfeitMarketThumb from '../images/counterfeit_market_thumb.jpg'
 import ivoryTradeVideo from '../videos/ivory_trade.mp4'
 import ivoryTradeThumb from '../images/ivory_trade_thumb.png'
+import affordableHousingThumb from '../images/affordable_housing_thumb.jpg'
+import hongKongProtestsVideo from '../videos/hong_kong_protests.mp4'
+import hongKongProtestsThumb from '../images/hong_kong_protests_thumb.png'
+import hollywoodChinaCourtshipVideo from '../videos/hollywood_china_courtship.mp4'
+import hollywoodChinaCourtshipThumb from '../images/hollywood_china_courtship.png'
+import turkeysCashCropsVideo from '../videos/turkeys_cash_crops.mp4'
+import turkeysCashCropsThumb from '../images/turkeys_cash_crops.png'
 
 
 import './portfolio.css'
@@ -24,6 +31,76 @@ const Portfolio = () =>
 <section id="portfolio" className="portfolio">
     <h2>Portfolio</h2>
     <ul className="list">
+        <a className="item" href="https://www.aljazeera.com/ajimpact/lack-affordable-housing-feeds-hong-kong-discontent-190801151538867.html">
+            <div className="thumb">
+                <img src={affordableHousingThumb} />
+            </div>
+            <div className="description">
+                <div className="title">
+                    A lack of affordable housing feeds Hong Kong's discontent
+                </div>
+                <div className="body">
+                    Frustration at the Chinese territory’s sky-high property prices is one of many reasons why people are protesting.
+                </div>
+                <div className="action">
+                    AL JAZEERA - Writer
+                </div>
+                <div className="action">
+                    See more →
+                </div>
+            </div>
+        </a>
+        <div className="item">
+            <div className="thumb">
+                <video muted poster={hongKongProtestsThumb} controls loop preload="none">
+                    <source src={hongKongProtestsVideo} type="video/mp4" media="all and (min-width:769px)" />
+                </video>            </div>
+            <div className="description">
+                <div className="title">
+                    Hong Kong Protests: Demonstrators demand inquiry into violence
+                </div>
+                <div className="body">
+                    Democracy activists in Hong Kong have accused Beijing of "fanning the flames" of a city that is already fractured.
+                </div>
+                <div className="action">
+                    TRT World - Correspondent 
+                </div>
+            </div>
+        </div>
+        <div className="item">
+            <div className="thumb">
+                <video muted poster={hollywoodChinaCourtshipThumb} controls loop preload="none">
+                    <source src={hollywoodChinaCourtshipVideo} type="video/mp4" media="all and (min-width:769px)" />
+                </video>            </div>
+            <div className="description">
+                <div className="title">
+                    The Hollywood/China Courtship
+                </div>
+                <div className="body">
+                    China's blossoming relationship with Hollywood has an impact on audiences around the world.
+                </div>
+                <div className="action">
+                    CGTN - Producer
+                </div>
+            </div>
+        </div>
+        <div className="item">
+            <div className="thumb">
+                <video muted poster={turkeysCashCropsThumb} controls loop preload="none">
+                    <source src={turkeysCashCropsVideo} type="video/mp4" media="all and (min-width:769px)" />
+                </video>            </div>
+            <div className="description">
+                <div className="title">
+                    Cracking the China market
+                </div>
+                <div className="body">
+                    The US-China trade war has tested the world's two biggest economies and rattled global markets. But it appears an unlikely winner may have emerged from the dispute between the world's largest economies: Turkish hazelnut producers.
+                </div>
+                <div className="action">
+                    TRT World - Correspondent
+                </div>
+            </div>
+        </div>
         <div className="item">
             <div className="thumb">
                 <video muted poster={changingFaceThumb} controls loop preload="none">
