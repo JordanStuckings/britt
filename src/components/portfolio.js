@@ -241,7 +241,7 @@ const Portfolio = () =>
                     Shop vendors at a popular market in Beijing, sales of brands like the iconic “Canada Goose” have been faring well thanks to chilly weather and slashed prices.
                 </div>
                 <div className="action">
-                    CBC :  Correspondent
+                    CBC - Correspondent
                 </div>
             </div>
         </div>
