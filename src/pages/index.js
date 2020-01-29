@@ -8,6 +8,7 @@ import Clients from '../components/clients'
 import Bio from '../components/bio'
 import Banner from '../components/banner'
 import Enquire from '../components/enquire'
+import Tweet from '../components/tweet'
 import protestShot from '../images/protest_shot.jpg'
 import showreelThumb from '../images/showreel_thumb.png'
 import showreelVideo from '../videos/showreel.mp4'
@@ -24,6 +25,9 @@ const HomePage = () => (
         </video>
     </Banner>
     <Bio />
+    <Banner>
+        <Tweet />
+    </Banner>
     <Banner>
         <img src={protestShot} />
     </Banner>

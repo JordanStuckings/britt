@@ -10,6 +10,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-twitter',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -67,5 +68,11 @@ module.exports = {
             defaultDataLayer: { platform: "gatsby" },
         },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-144234610-1",
+      },
+    }
   ],
 }
