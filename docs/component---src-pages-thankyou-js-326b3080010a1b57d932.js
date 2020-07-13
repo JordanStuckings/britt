@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"5IE7":function(e,t,n){"use strict";n.r(t);var a=n("Wbzz"),o=n("q1tI"),l=n.n(o),r=n("Bl7J"),u=n("vrFN");t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"Thank You"}),l.a.createElement("p",null," Thank you. Britt Clennett will get in contact with you soon"),l.a.createElement(a.Link,{to:"/"},"Return to Home page"))}}}]);
+//# sourceMappingURL=component---src-pages-thankyou-js-326b3080010a1b57d932.js.map

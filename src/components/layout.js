@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
-import Nav from '../components/nav'
-import Footer from '../components/footer'
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
 
-import './layout.css'
+import "./layout.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -17,20 +17,18 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Nav />
-        <div style={{ 'min-height': '80vh'}}>
-          {children}
-        </div>
+        <div style={{ "min-height": "80vh" }}>{children}</div>
         <Footer />
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
