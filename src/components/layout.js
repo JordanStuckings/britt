@@ -5,6 +5,7 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 
 import "./layout.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,7 +21,7 @@ const Layout = ({ children }) => (
     render={(data) => (
       <>
         <Nav />
-        <div style={{ "min-height": "80vh" }}>{children}</div>
+        <div style={{ minHeight: "80vh" }}>{children}</div>
         <Footer />
       </>
     )}

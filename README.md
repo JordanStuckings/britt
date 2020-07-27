@@ -1,11 +1,11 @@
-# Gatsby Personal Website
+# Portfolio
 
-View this website [live on github pages](https://www.brittclennett.com)
+View this website [live on github pages](https://brittclennett.com/)
 
 1. Install dependencies
 
 ```sh
-yarn
+npm install
 ```
 
 2. Run the develop script

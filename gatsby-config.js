@@ -3,13 +3,16 @@ const path = require("path");
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
-    title: "Britt Clennett",
-    description: "See my latest articles, stories and showreels",
+    title:
+      "Britt Clennett - seasoned journalist with almost a decade of experience covering stories for multiple networks across Asia and the world",
+    description:
+      "The Hong Kong-raised Australian has reported on some of the biggest stories in the region. She’s gauged the impact of the US-China trade war for Al Jazeera and reported live for TRT World as protesters in Hong Kong demand greater democracy. Britt also covered the 2018 Thai cave rescue and the historic first meeting between the leaders of North and South Korea",
     author: "Jordan",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-twitter",
+    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,7 +50,7 @@ module.exports = {
         background_color: "#f43",
         theme_color: "#f43",
         display: "minimal-ui",
-        icon: "src/images/britt-sketch-square.png", // This path is relative to the root of the site.
+        icon: "src/images/britt-head-shot-square.png", // This path is relative to the root of the site.
       },
     },
     {

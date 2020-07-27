@@ -3,14 +3,14 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Hero from "../components/hero";
 import Portfolio from "../components/portfolio";
-import Clients from "../components/clients";
 import Bio from "../components/bio";
 import Banner from "../components/banner";
-import Enquire from "../components/enquire";
-import Tweet from "../components/tweet";
-import protestShot from "../images/protest_shot.jpg";
+import Contact from "../components/contact";
+import TweetCarousel from "../components/tweet-carousel";
 import showreelThumb from "../images/showreel_thumb.png";
 import showreelVideo from "../videos/showreel.mp4";
+import Video from "../components/video";
+import Image from "../components/image";
 
 const HomePage = () => (
   <Layout>
@@ -24,29 +24,28 @@ const HomePage = () => (
         "reporter",
         "Hong Kong",
         "china",
+        "ABC",
       ]}
     />
     <Hero />
     <Banner>
-      <video muted poster={showreelThumb} controls loop preload="auto">
-        <source
-          src={showreelVideo}
-          type="video/mp4"
-          media="all and (min-width:769px)"
-        />
-      </video>
+      <Video
+        muted
+        poster={showreelThumb}
+        controls
+        loop
+        preload="auto"
+        src={showreelVideo}
+      />
     </Banner>
     <Bio />
     <Banner>
-      <Tweet />
-    </Banner>
-    <Banner>
-      <img src={protestShot} alt={"Protest Shot"} />
+      <TweetCarousel />
     </Banner>
     <Portfolio />
-    <Clients />
-    <Enquire />
+    <Contact />
   </Layout>
 );
+
 
 export default HomePage;

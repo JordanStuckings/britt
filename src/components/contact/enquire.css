@@ -1,0 +1,91 @@
+.enquire {
+  background-color: #ecf0e9;
+  margin: 0;
+  position: relative;
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.enquire .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.enquire .list .item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.enquire .list .item input {
+  padding: 15px 0.75rem 15px 1.25rem;
+  border-radius: 26px;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  overflow: visible;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.enquire .list .item input:focus {
+  box-shadow: 0 0 5px #d9e4cf;
+  padding: 15px 0.75rem 15px 1.25rem;
+  margin: 0;
+  border: 1px solid #d9e4cf;
+}
+
+.enquire .list .item button {
+  cursor: pointer;
+
+  width: 100%;
+
+  background-color: #d9e4cf;
+  border: none;
+  text-transform: uppercase;
+
+  -webkit-appearance: button;
+  border-radius: 26px;
+  padding: 15px 46px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.15s;
+  overflow: visible;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .enquire .list .item {
+    display: inline-block;
+    width: 24.5%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+}

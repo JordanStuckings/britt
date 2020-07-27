@@ -1,4 +1,5 @@
 import React from "react";
+import Video from "./video";
 import changingFaceVideo from "../videos/changing_face_240p.mp4";
 import changingFaceThumb from "../images/changing_face_thumb.png";
 import christmasCancelledThumb from "../images/christmas_cancelled_thumb.jpg";
@@ -12,17 +13,28 @@ import activistsJailedVideo from "../videos/activists_jailed.mp4";
 import activistsJailedThumb from "../images/activists_jailed_thumb.png";
 import counterfeitMarketAudio from "../audio/counterfeit_market.mp3";
 import counterfeitMarketThumb from "../images/counterfeit_market_thumb.jpg";
-import ivoryTradeVideo from "../videos/ivory_trade.mp4";
-import ivoryTradeThumb from "../images/ivory_trade_thumb.png";
 import affordableHousingThumb from "../images/affordable_housing_thumb.jpg";
 import hongKongProtestsVideo from "../videos/hong_kong_protests.mp4";
 import hongKongProtestsThumb from "../images/hong_kong_protests_thumb.png";
-import hollywoodChinaCourtshipVideo from "../videos/hollywood_china_courtship.mp4";
-import hollywoodChinaCourtshipThumb from "../images/hollywood_china_courtship.png";
-import turkeysCashCropsVideo from "../videos/turkeys_cash_crops.mp4";
-import turkeysCashCropsThumb from "../images/turkeys_cash_crops.png";
-
+import HongKongClashesOverNewSecurityLawVideo from "../videos/hong_kong_clashes_over_new_security_law.mp4";
+import HongKongClashesOverNewSecurityLawThumb from "../images/hong_kong_clashes_over_new_security_law.jpg";
+import ProtestersInHongKongDemonstrateAgainstNewNationalSecurityLawPassedByChinaVideo from "../videos/protesters_in_hong_kong_demonstrate_against_new_national_security_law_passed_by_china.mp4";
+import ProtestersInHongKongDemonstrateAgainstNewNationalSecurityLawPassedByChinaThumb from "../images/protesters_in_hong_kong_demonstrate_against_new_national_security_law_passed_by_china.jpeg";
+import ActivistSpeaksOutOnNationalSecurityLawThumb from "../images/activist_speaks_out_on_national_security_law.jpg";
+import TurkeyIsAwashWithPlasticWasteThumb from "../images/turkey_is_awash_with_plastic_waste.jpg";
+import AdaptOrDieTurkeyRestaurantsRiseToCoronavirusChallengeThumb from "../images/adapt_or_die_turkey_restaurants_rise_to_coronavirus_challenge.jpg";
+import china_and_australias_war_of_words_video from "../videos/china_and_australias_war_of_words.mp4";
+import china_and_australias_war_of_words_thumb from "../images/china_and_australias_war_of_words_thumb.jpeg";
+import australias_bushfire_crisis from "../videos/australias_bushfire_crisis.mp4";
+import australias_bushfire_crisis_thumb from "../images/australias_bushfire_crisis_thumb.jpg";
+import cbc_news_ankara_vows_to_press_ahead_with_syrian_offensive from "../audio/cbc_news_ankara_vows_to_press_ahead_with_syrian_offensive.mp3";
+import cbc_news_ankara_vows_to_press_ahead_with_syrian_offensive_thumb from "../images/cbc_news_ankara_vows_to_press_ahead_with_syrian_offensive_thumb.jpg";
+import hong_kongs_new_reality_dawns_as_city_feels_chill_of_national_security_law_thumb from "../images/hong_kongs_new_reality_dawns_as_city_feels_chill_of_national_security_law_thumb.jpg";
+import hong_kongs_reality_under_new_national_security_law_video from "../videos/hong_kongs_reality_under_new_national_security_law.mp4";
+import hong_kongs_reality_under_new_national_security_law_thumb from "../images/hong_kongs_reality_under_new_national_security_law.jpg";
+import locked_down_down_under_thumb from "../images/locked_down_down_under.jpg";
 /* eslint-disable jsx-a11y/media-has-caption */
+
 
 import "./portfolio.css";
 
@@ -30,6 +42,197 @@ const Portfolio = () => (
   <section id="portfolio" className="portfolio">
     <h2>Portfolio</h2>
     <ul className="list">
+      <div className="item">
+        <div className="thumb">
+          <Video
+            muted
+            poster={HongKongClashesOverNewSecurityLawThumb}
+            controls
+            loop
+            preload="none"
+            src={HongKongClashesOverNewSecurityLawVideo}
+          />
+        </div>
+        <div className="description">
+          <div className="title">Hong Kong clashes over new security law</div>
+          <div className="body"></div>
+          <div className="action">ABC News - Correspondent</div>
+        </div>
+      </div>
+      <div className="item">
+        <div className="thumb">
+          <Video
+            muted
+            poster={hong_kongs_reality_under_new_national_security_law_thumb}
+            controls
+            loop
+            preload="none"
+            src={hong_kongs_reality_under_new_national_security_law_video}
+          />
+        </div>
+        <div className="description">
+          <div className="title">Hong Kong’s reality under new national security law</div>
+          <div className="body"></div>
+          <div className="action">ABC News - Correspondent</div>
+        </div>
+      </div>
+      <div className="item">
+        <div className="thumb">
+          <Video
+            muted
+            poster={ProtestersInHongKongDemonstrateAgainstNewNationalSecurityLawPassedByChinaThumb}
+            controls
+            loop
+            preload="none"
+            src={ProtestersInHongKongDemonstrateAgainstNewNationalSecurityLawPassedByChinaVideo}
+            style={{ objectFit: "fit" }}
+          />
+        </div>
+        <div className="description">
+          <div className="title">Protesters demonstrate against national security law passed by China</div>
+          <div className="body"></div>
+          <div className="action">ABC News - Correspondent</div>
+        </div>
+      </div>
+      <a
+        className="item"
+        href="https://abcnews.go.com/International/hong-kong-activist-joshua-wong-speaks-national-security/story?id=71630260"
+      >
+        <div className="thumb">
+          <img
+            src={hong_kongs_new_reality_dawns_as_city_feels_chill_of_national_security_law_thumb}
+            alt={"Hong Kong and Chinese national flags are flown behind a pair of surveillance cameras outside the Central Government Offices in Hong Kong, China July 20, 2020."}
+          />
+        </div>
+        <div className="description">
+          <div className="title">
+            Hong Kong’s new reality dawns as city feels chill of national security law
+          </div>
+          <div className="body">
+            Hong Kong's semi-autonomy and freedoms hang in the balance.
+          </div>
+          <div className="action">ABC News - Writer</div>
+          <div className="action">See more →</div>
+        </div>
+      </a>
+      <a
+        className="item"
+        href="https://abcnews.go.com/International/hong-kong-activist-joshua-wong-speaks-national-security/story?id=71630260"
+      >
+        <div className="thumb">
+          <img
+            src={ActivistSpeaksOutOnNationalSecurityLawThumb}
+            alt={"Activist Speaks Out On National Security Law Thumbnail"}
+          />
+        </div>
+        <div className="description">
+          <div className="title">
+            Activist speaks out on national security law
+          </div>
+          <div className="body">
+
+          </div>
+          <div className="action">ABC News - Writer</div>
+          <div className="action">See more →</div>
+        </div>
+      </a>
+      <a
+        className="item"
+        href="https://abcnews.go.com/International/video/locked--71853178"
+      >
+        <div className="thumb">
+          <img
+            src={locked_down_down_under_thumb}
+            alt={"Locked down Down Under Thumbnail"}
+          />
+        </div>
+        <div className="description">
+          <div className="title">
+            Locked down Down Under
+          </div>
+          <div className="body">
+
+          </div>
+          <div className="action">ABC News - Correspondent</div>
+          <div className="action">See more →</div>
+        </div>
+      </a>
+      <a
+        className="item"
+        href="https://abcnews.go.com/International/hong-kong-activist-joshua-wong-speaks-national-security/story?id=71630260"
+      >
+        <div className="thumb">
+          <img
+            src={TurkeyIsAwashWithPlasticWasteThumb}
+            alt={"Turkey Is Awash With Plastic Waste Thumbnail"}
+          />
+        </div>
+        <div className="description">
+          <div className="title">
+            Turkey is awash with plastic waste. Coronavirus could make it worse.
+          </div>
+          <div className="body">
+
+          </div>
+          <div className="action">AL JAZEERA - Writer</div>
+          <div className="action">See more →</div>
+        </div>
+      </a>
+      <a
+        className="item"
+        href="https://abcnews.go.com/International/hong-kong-activist-joshua-wong-speaks-national-security/story?id=71630260"
+      >
+        <div className="thumb">
+          <img
+            src={AdaptOrDieTurkeyRestaurantsRiseToCoronavirusChallengeThumb}
+            alt={"Adapt Or Die Turkey Restaurants Rise To Coronavirus Challenge Thumbnail"}
+          />
+        </div>
+        <div className="description">
+          <div className="title">
+            'Adapt or die': Turkey restaurants rise to coronavirus challenge
+          </div>
+          <div className="body">
+            Istanbul’s restaurants, bars and cafes had just started to recover. Then COVID-19 hit them with a new setback.
+          </div>
+          <div className="action">AL JAZEERA - Writer</div>
+          <div className="action">See more →</div>
+        </div>
+      </a>
+      <div className="item">
+        <div className="thumb">
+          <Video
+            muted
+            poster={china_and_australias_war_of_words_thumb}
+            controls
+            loop
+            preload="none"
+            src={china_and_australias_war_of_words_video}
+          />
+        </div>
+        <div className="description">
+          <div className="title">China and Australia’s war of words</div>
+          <div className="body">Australia's push for an inquiry into the origins of the coronavirus has exacerbated tensions with its biggest trading partner, China. Canberra finds itself navigating a tough path between long-term security ally Washington and its economic ties to Beijing. Is another trade war looming?</div>
+          <div className="action">TRT - Correspondent</div>
+        </div>
+      </div>
+      <div className="item">
+        <div className="thumb">
+          <Video
+            muted
+            poster={australias_bushfire_crisis_thumb}
+            controls
+            loop
+            preload="none"
+            src={australias_bushfire_crisis}
+          />
+        </div>
+        <div className="description">
+          <div className="title">Australia's bushfire crisis</div>
+          <div className="body">Despite public outrage and warnings from scientists, the Australian government says there's no direct link between climate change and the country's catastrophic bushfires.</div>
+          <div className="action">TRT - Correspondent</div>
+        </div>
+      </div>
       <a
         className="item"
         href="https://www.aljazeera.com/ajimpact/lack-affordable-housing-feeds-hong-kong-discontent-190801151538867.html"
@@ -79,7 +282,7 @@ const Portfolio = () => (
           <div className="action">TRT World - Correspondent</div>
         </div>
       </div>
-      <div className="item">
+      {/* <div className="item">
         <div className="thumb">
           <video
             muted
@@ -103,8 +306,8 @@ const Portfolio = () => (
           </div>
           <div className="action">CGTN - Producer</div>
         </div>
-      </div>
-      <div className="item">
+      </div> */}
+      {/* <div className="item">
         <div className="thumb">
           <video
             muted
@@ -130,7 +333,7 @@ const Portfolio = () => (
           </div>
           <div className="action">TRT World - Correspondent</div>
         </div>
-      </div>
+      </div> */}
       <div className="item">
         <div className="thumb">
           <video muted poster={changingFaceThumb} controls loop preload="none">
@@ -331,6 +534,28 @@ const Portfolio = () => (
       </div>
       <div className="item">
         <div className="thumb">
+          <img
+            src={cbc_news_ankara_vows_to_press_ahead_with_syrian_offensive_thumb}
+            alt={"Ankara Vows To Press Ahead With Syrian Offensive"}
+          />
+          <figure>
+            <audio controls src={cbc_news_ankara_vows_to_press_ahead_with_syrian_offensive}>
+              Your browser does not support the
+              <code>audio</code> element.
+            </audio>
+          </figure>
+        </div>
+        <div className="description">
+          <div className="title">
+            Ankara vows to press ahead with Syrian offensive
+          </div>
+          <div className="body">
+          </div>
+          <div className="action">CBC - Correspondent</div>
+        </div>
+      </div>
+      {/* <div className="item">
+        <div className="thumb">
           <video muted poster={ivoryTradeThumb} controls loop preload="none">
             <source
               src={ivoryTradeVideo}
@@ -350,7 +575,7 @@ const Portfolio = () => (
           </div>
           <div className="action">CGTN - Presenter/Producer</div>
         </div>
-      </div>
+      </div> */}
     </ul>
   </section>
 );
