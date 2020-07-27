@@ -6,12 +6,15 @@
   padding-bottom: 2.3rem;
   padding-right: 1rem;
   padding-left: 1rem;
+  margin: auto;
 }
 
 .enquire .list {
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .enquire .list .item {

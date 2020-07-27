@@ -12,8 +12,7 @@ const Banner = styled.section`
     display: flex;
     width: 100%;
     height: auto;
-    max-width: 1920px;
-    margin: 0;
+    margin: auto;
   }
   background-color: ${(props) => props.backgroundColor ?? "#ECF0E9"};
 `;
