@@ -11,6 +11,7 @@ import showreelThumb from "../images/showreel_thumb.png";
 import showreelVideo from "../videos/showreel.mp4";
 import Video from "../components/video";
 import Image from "../components/image";
+import showImage from "../images/protest_shot.jpg";
 
 const HomePage = () => (
   <Layout>
@@ -43,6 +44,9 @@ const HomePage = () => (
       <TweetCarousel />
     </Banner>
     <Portfolio />
+    <Banner>
+      <Image src={showImage} />
+    </Banner>
     <Contact />
   </Layout>
 );

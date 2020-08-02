@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import Banner from "../components/banner";
 
 import "./layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,7 +23,9 @@ const Layout = ({ children }) => (
       <>
         <Nav />
         <div style={{ minHeight: "80vh" }}>{children}</div>
-        <Footer />
+        <Banner>
+          <Footer />
+        </Banner>
       </>
     )}
   />

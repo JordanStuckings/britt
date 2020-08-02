@@ -111,7 +111,7 @@ const Portfolio = () => (
           <div className="body">
             Hong Kong's semi-autonomy and freedoms hang in the balance.
           </div>
-          <div className="action">ABC News - Writer</div>
+          <div className="action">ABC News - Correspondent</div>
           <div className="action">See more →</div>
         </div>
       </a>
@@ -132,7 +132,7 @@ const Portfolio = () => (
           <div className="body">
 
           </div>
-          <div className="action">ABC News - Writer</div>
+          <div className="action">ABC News - Correspondent</div>
           <div className="action">See more →</div>
         </div>
       </a>
